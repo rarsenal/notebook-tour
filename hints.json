@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "hints/js/main": true
+  }
+}
