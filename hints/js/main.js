@@ -35,7 +35,7 @@ define([
                                 $("<iframe></iframe>")
                                     .css("height", $(window).height() - 300)
                                     .css("width", "100%")
-                                    .attr("src", Jupyter.notebook_list.base_url + "static/hints/html/hints.html")
+                                    .attr("src", Jupyter.notebook_list.base_url + "nbextensions/hints/html/hints.html")
                             ),
                         buttons: {
                             "Take a Tour!": {
@@ -162,10 +162,23 @@ define([
         });
     }
 
+    function load_css() {
+        const STATIC_PATH = Jupyter.notebook_list.base_url + "nbextensions/hints/css/";
+
+        $('head')
+            .append(
+                $('<link rel="stylesheet" type="text/css" />')
+                    .attr("rel", "stylesheet")
+                    .attr("type", "text/css")
+                    .attr('href', STATIC_PATH + 'hints.css')
+            );
+    }
+
     /**
      * Initialize the hints & webtour
      */
     function load_ipython_extension() {
+        load_css();
         const on_index_page = $("#notebooks").is(":visible");
         if (on_index_page) display_hints();
         $(document).on("gp.repo.auth", check_webtour);
