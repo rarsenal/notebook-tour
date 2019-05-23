@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to the GenePattern Notebook Repository!</title>
+    <title>Welcome to the UCI U54 Cancer Systems Biology Center Data Portal!</title>
     <link rel="stylesheet" href="/hub/static/css/style.min.css" type="text/css" />
     <style type="text/css">
         body {
@@ -37,21 +37,20 @@
         }
 
         function open_notebook_tutorial() {
-            const tutorial_url = user_path() + "/notebooks/GenePattern Notebook Tutorial.ipynb";
+            const tutorial_url = user_path() + "/notebooks/Tutorial.ipynb";
             window.open(tutorial_url);
         }
     </script>
 </head>
 <body>
     <h3>Getting Started</h3>
-    <p>Welcome to the GenePattern Notebook Repository. GenePattern provides hundreds of analytical tools for the analysis of gene expression (RNA-seq and
-        microarray), sequence variation and copy number, proteomic, flow cytometry, and network analysis - all with a user-friendly interface!</p>
-    <p>This resource is here to help you run your own genomic analyses through the creation of interactive "notebooks." These notebooks are designed to help you
+    <p>Welcome to the UCI U54 Cancer Systems Biology (CaSB) Center Data Portal! This portal aims to help facilitate data and methods sharing between researchers of the various projects at UCI CaSB. The portal heavily borrows from the Broad Institute's GenePattern Server, GenePattern Notebook and Notebook Repository as its underlying workflow engine and data sharing framework.</p>
+    <p>This resource is here to help you run your own Single Cell RNAseq analyses through the creation of interactive "notebooks." These notebooks are designed to help you
         explore, track and reproduce your research, all the way from its conception through its dissemination.</p>
     <p>To get started, we recommend beginning with the <a href="javascript:open_notebook_tutorial();">GenePattern Notebook Tutorial</a>.</p>
 
     <h3>Accessing Public Notebooks</h3>
-    <p>The GenePattern Notebook Repository provides an variety of public notebooks, which can serve as templates or examples when creating your own. These
+    <p>The GenePattern Notebook Repository at UCI CaSB provides an variety of public notebooks, which can serve as templates or examples when creating your own. These
         notebooks can be accessed from the "Notebook Library" tab at the top of this page. (You may need to close this dialog in order to see the tab.)</p>
     <p><img src="../img/public_notebooks.jpg" /></p>
     <p>To open a public notebook, first look through the list and find one that interests you, then click on the notebook's name to open a dialog with the full
@@ -60,10 +59,10 @@
         reproduce its contents.</p>
 
     <h3>Creating Your Own Notebook</h3>
-    <p>To create your own notebook from scratch, click the "New" dropdown and select Python 3.6. Programming knowledge is not required to use GenePattern
+    <p>To create your own notebook from scratch, click the "New" dropdown and select either Python or R kernel. In addition, you can start a Rstudio session that will open in a separate tab. Programming knowledge is not required to use GenePattern
         Notebooks, but its use remains available to you if you are a coder.</p>
     <p><img src="../img/new_notebook.jpg" /></p>
-    <p>This will open a new blank notebook. To begin a GenePattern analysis, select any cell and change the cell type to "GenePattern." For more information,
+    <p>This will open a new blank notebook. To begin an analysis that will run on the UCI HPC cluster, select any cell and change the cell type to "GenePattern." For more information,
         see the <a href="javascript:open_notebook_tutorial();">GenePattern Notebook Tutorial</a>.</p>
 </body>
 </html>
