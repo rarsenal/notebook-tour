@@ -23,13 +23,13 @@ define([
         $("body").append(
             $("<div></div>")
                 .attr("id", "gp-hint-box")
-                .attr("title", "Welcome to the GenePattern Notebook Repository")
+                .attr("title", "Welcome to the UCI U54 CaSB Data Portal")
                 .append(
                     $("<i class='fa fa-info' aria-hidden='true'></i>")
                 )
                 .click(function() {
                     dialog.modal({
-                        title : "Welcome to the GenePattern Notebook Repository",
+                        title : "Welcome to the UCI U54 CaSB Data Portal",
                         body : $("<div></div>")
                             .append(
                                 $("<iframe></iframe>")
@@ -63,13 +63,13 @@ define([
         intro.setOptions({
             steps: [
                 {   // STEP 0
-                    intro: "<h4>Welcome to the GenePattern Notebook Repository</h4>" +
-                        "GenePattern provides hundreds of analytical tools for the analysis of gene expression (RNA-seq and microarray), sequence variation and copy number, proteomic, flow cytometry, and network analysis - all with a user-friendly interface!"
+                    intro: "<h4>Welcome to the UCI U54 CaSB Data Portal</h4>" +
+                        "This portal allows the U54 CaSB members to create and share interactive codes for data visualization and analysis."
                 },
                 {   // STEP 1
                     element: document.querySelectorAll('.repository_tab_link')[0],
                     intro: "<h4>Notebook Library</h4>" +
-                        "The GenePattern Notebook Repository provides a library of public notebooks, which can serve as templates or examples when creating your own. These notebooks can be accessed from the <em>Notebook Library</em> tab."
+                        "The portal provides a repository of public notebooks, which can serve as templates or examples when creating your own. These notebooks can be accessed from the <em>Notebook Library</em> tab."
                 },
                 {   // STEP 2
                     element: document.querySelectorAll('[data-tag=featured]')[0],
@@ -79,12 +79,12 @@ define([
                 {   // STEP 3
                     element: document.querySelectorAll('[data-tag=tutorial]')[0],
                     intro: "<h4>Tutorial Notebooks</h4>" +
-                        "Tutorial notebooks teach how to use different GenePattern Notebook features, including advanced programmatic features."
+                        "Tutorial notebooks teach how to use different Notebook features, including advanced programmatic features."
                 },
                 {   // STEP 4
                     element: document.querySelectorAll('#repo-sidebar-nav [data-tag=""]')[0],
                     intro: "<h4>Community Notebooks</h4>" +
-                        "Finally, community notebooks are those that have been contributed by the GenePattern Notebook community."
+                        "Finally, community notebooks are those that have been contributed by the U54 CaSB community."
                 },
                 {   // STEP 5
                     element: document.querySelectorAll('[data-tag="-shared-by-me"]')[0],
@@ -165,7 +165,7 @@ define([
     function load_css() {
         const STATIC_PATH = Jupyter.notebook_list.base_url + "nbextensions/hints/css/";
 
-        $('head')
+        $('head')Welcome to the GenePattern Notebook Repository
             .append(
                 $('<link rel="stylesheet" type="text/css" />')
                     .attr("rel", "stylesheet")
