@@ -1,6 +1,6 @@
-# notebook-tour
+# UCI U54 Notebook Repository notebook-tour
 
-This nbextension is a companion to the GenePattern Notebook extension and the Notebook Repository extension and web service.
+This nbextension is a companion to the GenePattern Notebook extension and the Notebook Repository extension and web service at UCI U54 CaSB portal.
 It displays a helpful hints dialog on the index page and provides an automated tour of GenePattern features.
 
 # Installation
