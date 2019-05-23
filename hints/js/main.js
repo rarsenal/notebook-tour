@@ -165,7 +165,7 @@ define([
     function load_css() {
         const STATIC_PATH = Jupyter.notebook_list.base_url + "nbextensions/hints/css/";
 
-        $('head')Welcome to the GenePattern Notebook Repository
+        $('head')
             .append(
                 $('<link rel="stylesheet" type="text/css" />')
                     .attr("rel", "stylesheet")
