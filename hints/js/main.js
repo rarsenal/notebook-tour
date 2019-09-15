@@ -23,13 +23,13 @@ define([
         $("body").append(
             $("<div></div>")
                 .attr("id", "gp-hint-box")
-                .attr("title", "Welcome to the UCI U54 CaSB Data Portal")
+                .attr("title", "Welcome to the UCI U54/P30 Data Portal")
                 .append(
                     $("<i class='fa fa-info' aria-hidden='true'></i>")
                 )
                 .click(function() {
                     dialog.modal({
-                        title : "Welcome to the UCI U54 CaSB Data Portal",
+                        title : "Welcome to the UCI U54/P30 Data Portal",
                         body : $("<div></div>")
                             .append(
                                 $("<iframe></iframe>")
@@ -63,8 +63,8 @@ define([
         intro.setOptions({
             steps: [
                 {   // STEP 0
-                    intro: "<h4>Welcome to the UCI U54 CaSB Data Portal</h4>" +
-                        "This portal allows the U54 CaSB members to create and share interactive codes for data visualization and analysis."
+                    intro: "<h4>Welcome to the UCI U54/P30 Data Portal</h4>" +
+                        "This portal allows the UCI U54 and P30 center members to create and share interactive codes for data visualization and analysis."
                 },
                 {   // STEP 1
                     element: document.querySelectorAll('.repository_tab_link')[0],
